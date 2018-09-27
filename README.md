@@ -14,4 +14,6 @@ The pipeline is dependent on the following packages
 ### Website
 Precomputed results for seven plant genomes can be found at https://www.genome.arizona.edu/crispr2/
 
+The website also provides a detailed description of the analysis steps.
+
 2018, Bastian Minkenberg
