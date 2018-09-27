@@ -1,8 +1,8 @@
 REM # 09-27-2018 Bastian Minkenberg. Commands used to execute CRISPR-PLANTv2 pipeline:
 REM # Extract all NGG and NAG sites.
-REM # CUSTAMIZATION STEPS: Please exchange GENOME.FA with your favorite genome. Please change NGG to your PAM of choice and NAG to your alternative PAM of choice for off-target search
+REM # CUSTOMIZATION STEPS: Please exchange GENOME.FA with your favorite genome. Please change NGG to your PAM of choice and NAG to your alternative PAM of choice for off-target search
 fuzznuc -complement true -pattern NNNNNNNNNNNNNNNNNNNNNGG -sequence GENOME.FA -outfile 20NNGG_GENOME.fuzznuc
-fuzznuc -complement true -pattern NNNNNNNNNNNNNNNNNNNNNAG -sequence brachypodium.all.chrs.con -outfile 20NNAG_GENOME.fuzznuc
+fuzznuc -complement true -pattern NNNNNNNNNNNNNNNNNNNNNAG -sequence GENOME.FA -outfile 20NNAG_GENOME.fuzznuc
 REM # summarize the results in a new fasta file that gives each target site a unique identifier "Chromosome:start_position-end_position:strand". "strand" is show as empty for plus or "rc" for minus.
 python ./python-scripts/cp_fuzznuc_to_fasta.py 20NNGG_GENOME.fuzznuc 20NNGG_GENOME.fa
 python ./python-scripts/seqtable_to_fasta_sb.py 20NNAG_GENOME.fuzznuc 20NNAG_GENOME.fa
@@ -93,5 +93,5 @@ python ./python-scripts/cp_extract_from_candidate_list.py sorted_A0.1_GENOME_NGG
 python ./python-scripts/cp_extract_from_candidate_list.py sorted_B0.1_GENOME_NGG_spacers.ids GENOME_NGG_spacer_candidates.fa B0.1_GENOME_NGG_spacers.fa
 python ./python-scripts/cp_extract_from_candidate_list.py sorted_A1_GENOME_NGG_spacers.ids GENOME_NGG_spacer_candidates.fa A1_GENOME_NGG_spacers.fa
 python ./python-scripts/cp_extract_from_candidate_list.py sorted_B1_GENOME_NGG_spacers.ids GENOME_NGG_spacer_candidates.fa B1_GENOME_NGG_spacers.fa
-REM # This conclude the full genome-wide analysis and classification of CRISPR/Cas9 target sites of a genome. For the CRISPR-PLANTv2 website, we created tables compatible with a SQL database. An example for a file that converts the fasta files to a searchable table is given with the python script cp_create_database.py.
+REM # This concludes the full genome-wide analysis and classification of CRISPR/Cas9 target sites of a genome. For the CRISPR-PLANTv2 website, we created tables compatible with a SQL database. An example for a file that converts the fasta files to a searchable table is given with the python script cp_create_database.py.
 REM # 09-27-2018 Bastian Minkenberg
