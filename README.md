@@ -9,7 +9,7 @@ The pipeline is dependent on the following packages
 
 ### Content
 1. directory "python-scripts": Contains all files with python code necessary to process results from the analysis.
-2. file "pipeline-commands.txt": A text file summarizing the commands necessary for a genome-wide analysis for highly specific on-target sites.
+2. file "pipeline-commands.txt": A text file summarizing the commands necessary for a genome-wide analysis for highly specific on-target sites. We provide notes at places where the genome and PAM sequences can be adjusted.
 
 ### Website
 Precomputed results for seven plant genomes can be found at https://www.genome.arizona.edu/crispr2/
