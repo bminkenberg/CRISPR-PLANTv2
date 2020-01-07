@@ -5,7 +5,7 @@ fuzznuc -complement true -pattern NNNNNNNNNNNNNNNNNNNNNGG -sequence GENOME.FA -o
 fuzznuc -complement true -pattern NNNNNNNNNNNNNNNNNNNNNAG -sequence GENOME.FA -outfile 20NNAG_GENOME.fuzznuc
 REM # summarize the results in a new fasta file that gives each target site a unique identifier "Chromosome:start_position-end_position:strand". "strand" is show as empty for plus or "rc" for minus.
 python ./python-scripts/cp_fuzznuc_to_fasta.py 20NNGG_GENOME.fuzznuc 20NNGG_GENOME.fa
-python ./python-scripts/seqtable_to_fasta_sb.py 20NNAG_GENOME.fuzznuc 20NNAG_GENOME.fa
+python ./python-scripts/cp_fuzznuc_to_fasta.py 20NNAG_GENOME.fuzznuc 20NNAG_GENOME.fa
 REM # remove low complexity sequences using dust
 vsearch --fastx_mask 20NNGG_GENOME.fa --qmask dust --hardmask --fastaout dusted_20NNGG_GENOME.fa --min_unmasked_pct 100
 REM # convert list from 20 nt to 15 nt seed region
