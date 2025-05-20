@@ -15,8 +15,8 @@ The pipeline is dependent on the following packages
 2. file "pipeline-commands.txt": A text file summarizing the commands necessary for a genome-wide analysis for highly specific on-target sites. We provide notes at places where the genome and PAM sequences can be adjusted.
 
 ### Website
-Precomputed results for seven plant genomes can be found at http://omap.org/crispr2/ !!! this website is currently down !!!  The website will be migrated to https://crispr-plantv2.bastianminkenberg.com/ as sonn as possible.
+Precomputed results for seven plant genomes can be found at https://crispr-plantv2.bastianminkenberg.com/.
 
 The website also provides a detailed description of the analysis steps.
 
-2018, Bastian Minkenberg
+2025, Bastian Minkenberg
