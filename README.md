@@ -3,6 +3,10 @@ Repository for CRISPR-PLANT version 2 pipeline accompanying the manuscript "CRIS
 ### Reference
 https://doi.org/10.1111/pbi.13025
 
+### Website
+Precomputed results for seven plant genomes can be found at https://crispr-plantv2.bastianminkenberg.com/.
+The website also provides a detailed description of the analysis steps.
+
 ### Dependencies
 The pipeline is dependent on the following packages
 1. python2
@@ -13,10 +17,5 @@ The pipeline is dependent on the following packages
 ### Content
 1. directory "python-scripts": Contains all files with python code necessary to process results from the analysis.
 2. file "pipeline-commands.txt": A text file summarizing the commands necessary for a genome-wide analysis for highly specific on-target sites. We provide notes at places where the genome and PAM sequences can be adjusted.
-
-### Website
-Precomputed results for seven plant genomes can be found at https://crispr-plantv2.bastianminkenberg.com/.
-
-The website also provides a detailed description of the analysis steps.
 
 2025, Bastian Minkenberg
