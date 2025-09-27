@@ -1,11 +1,13 @@
 # CRISPR-PLANTv2
 Repository for CRISPR-PLANT version 2 pipeline accompanying the manuscript "CRISPR-PLANT v2: An online resource for highly specific guide RNA spacers based on improved off-target analysis" published in The Plant Biotechnology Journal.
-### Reference
-https://doi.org/10.1111/pbi.13025
 
 ### Website
 Precomputed results for seven plant genomes can be found at https://crispr-plantv2.bastianminkenberg.com/.
 The website also provides a detailed description of the analysis steps.
+
+### Reference
+https://doi.org/10.1111/pbi.13025
+
 
 ### Dependencies
 The pipeline is dependent on the following packages
